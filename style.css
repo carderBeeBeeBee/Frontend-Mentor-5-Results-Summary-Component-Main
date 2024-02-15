@@ -184,3 +184,51 @@ button:hover {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media (min-width: 576px) {
+    .container {
+        flex-direction: row;
+        width: 50%;
+        height: 45%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 30px;
+        box-shadow: 20px 20px 30px #ebf1ff;
+    }
+
+    #result-section, #summary-section {
+        height: 100%;
+        min-height: none;
+        border-radius: 30px;
+        padding: 5% 10% 10% 10%;
+    }
+
+    #result-section {
+        width: 85%;
+    }
+
+    #summary-section {
+        padding: 6%;
+    }
+
+    
+
+    .circle {
+        height: 200px;
+        width: 200px;
+    }
+
+    .result {
+        font-size: 4rem;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 1%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+}
