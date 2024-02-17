@@ -15,12 +15,15 @@ html {
     font-size: 18px;
 }
 
+body { background-color: #303b5a01;}
+
 .container {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    background-color: white;
 }
 
 .section {
@@ -215,6 +218,7 @@ button:hover {
 
     #summary-section {
         padding: 6%;
+        margin: 0;
     }
 
     .circle {
@@ -229,4 +233,25 @@ button:hover {
     .stat {
         padding: 10px;
     }
+
+    .attribution {
+        position: absolute;
+        bottom: -6%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    @media (max-height: 500px) {
+        .attribution {
+            display: none;
+        }
+    }
+    
+    @media (max-height: 450px) {
+        .container {
+            top: 0%;
+            transform: translate(-50%, 0%);
+        }
+    }
 }
+
